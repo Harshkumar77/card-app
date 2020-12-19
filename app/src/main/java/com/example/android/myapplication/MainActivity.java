@@ -26,8 +26,6 @@ public class MainActivity extends AppCompatActivity {
 
 //        cardStructureArrayList.add(new cardStructure("",R.raw.x));
 
-        if (getSupportActionBar() != null)
-            getSupportActionBar().setTitle("Card App");
         viewPager2 = findViewById(R.id.viewPager2);
         viewPager2.setAdapter(  new viewPagerAdapter(this,cardStructureArrayList));
         viewPager2.setOrientation(ViewPager2.ORIENTATION_VERTICAL);

@@ -19,10 +19,10 @@ import java.util.ArrayList;
 
 public class viewPagerAdapter extends RecyclerView.Adapter<viewPagerAdapter.ViewHolder> {
 
-    Context context;
-    ArrayList<cardStructure> cardStructureArrayList;
-    TabLayout tabLayout;
-    ViewPager2 viewPager2;
+    private Context context;
+    private ArrayList<cardStructure> cardStructureArrayList;
+    private TabLayout tabLayout;
+    private ViewPager2 viewPager2;
 
     public viewPagerAdapter(Context context, ArrayList<cardStructure> cardStructureArrayList, TabLayout tabLayout, ViewPager2 viewPager2) {
         this.context = context;
@@ -54,9 +54,8 @@ public class viewPagerAdapter extends RecyclerView.Adapter<viewPagerAdapter.View
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
 
-        TextView mText ;
-        ImageView mImage;
-        TabLayout.Tab tab;
+        public TextView mText;
+        public ImageView mImage;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);

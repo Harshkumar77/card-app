@@ -43,7 +43,10 @@ public class viewPagerAdapter extends RecyclerView.Adapter<viewPagerAdapter.View
     @Override
     public void onBindViewHolder(@NonNull viewPagerAdapter.ViewHolder holder, int position) {
         holder.mText.setText(cardStructureArrayList.get(position).cardName);
-        holder.mText.setTextColor(ContextCompat.getColor(context,cardStructureArrayList.get(position).color));
+        if(cardStructureArrayList.get(position).isBlack)
+            holder.mText.setTextColor(ContextCompat.getColor(context,android.R.color.black));
+        else
+            holder.mText.setTextColor(ContextCompat.getColor(context,android.R.color.holo_red_dark));
         holder.mImage.setImageResource(cardStructureArrayList.get(position).cardImageId);
     }
 

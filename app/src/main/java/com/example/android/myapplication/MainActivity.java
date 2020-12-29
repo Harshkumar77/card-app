@@ -17,11 +17,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //Adding card info
         cardStructureArrayList.add(new cardStructure("Diamond queen", R.raw.xqqdd, false));
         cardStructureArrayList.add(new cardStructure("Heart queen", R.raw.xqqhh, false));
         cardStructureArrayList.add(new cardStructure("Spade queen", R.raw.xqqss, true));
         cardStructureArrayList.add(new cardStructure("Club queen", R.raw.xqqcc, true));
-        //Adding card info
 
         ViewPager2 viewPager2 = findViewById(R.id.viewPager2); // accessing ViewPager in activity_main.xml
 
